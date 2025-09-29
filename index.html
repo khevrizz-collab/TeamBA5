@@ -1,18 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <form>
-    <img src="" alt="">
-    <p>Name:Khevin Carl P. Rosalios</p>
-    <p>Age: 16</p>
-    <p>Grade: 11 MAWD-103</p>
-    </p>
-   </form>
+    <link rel="stylesheet" href="sy.css">
 </head>
-<body>
-    
+
+<body id="body">
+    <section>
+        <nav>
+          
+            <ul>
+                <li><a href="#body">Home</a></li>
+                
+                <li id="showSearch"><a href="#searchbar">project</a></li>
+            </ul>
+        </nav>
+        <img id="kheb" src="khe.jpg"  width="290px">
+    </section>
+    <label>Sample project</label>
+    <input type="search" list="woa" class="searchbar" id="searchbar" placeholder="SampleProject">
+    <input type="button" value="search" class="searchbar"  id="searchbtnn" onclick="search">
+    <div class="intro">
+        <p>My name is Khevin. Wellcome to my website!!! <br>
+            I love to create beautiful and functional websites. <br>
+            I am eager to learn new technologies. <br>
+            Feel free to explore my portfolio.
+        </p>
+
+
+    </div>
+    <!-- hire-->
+    <div class="intro">
+
+        <button id="hire">HIRE ME</button>
+
+    </div>    
+    <datalist id="woa">
+        <option value="Calcu"></option>
+        <option value="Choice"></option>
+        <option value="Aljolinail"></option>
+    </datalist>
+    <iframe id="spur" frameborder="0"
+        style="position: fixed; display: flex; justify-content: center; align-items: center; top: 5%; left: 5%; right: auto; width: 90%; height: 90%; display: none; "></iframe>
+    <script>
+
+        let iframe = document.getElementById("spur");
+
+        document.getElementById("searchbtnn").onclick = function () {
+            const app = document.getElementById("searchbar").value.toLowerCase();
+            let url = "";
+            if (app === "calcu") url = "https://magicalcalcu2.netlify.app/";
+            iframe.style.display = "flex";
+            if (app === "choice") url = "https://ano-feeling-noh.netlify.app/";
+            iframe.style.display = "flex";
+            if (app === "aljolinail") url = "https://example.com/aljolinail";
+            iframe.style.display = "flex";
+            if (url) {
+                iframe.src = url;
+            } else {
+                iframe.src = "";
+            }
+        }
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                iframe.style.display = "none";
+
+   
+            }
+
+        });
+        
+
+    </script>
 </body>
+
 </html>
