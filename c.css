@@ -1,0 +1,23 @@
+ul{
+    font-size: 15px;
+}
+li{
+    font-size: 20px;
+}
+
+body{
+    background-image: url(https://cdn-cf-east.streamable.com/image/zt5pjh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+    color:white;
+}
+h1{
+    color:white;
+}
+h4{
+    color:white;
+}
+a{
+    color:white;
+}
