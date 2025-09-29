@@ -1,24 +1,107 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: rgb(46, 99, 55);">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="st.css">
+    <title>Teamba</title>
 </head>
-<body>
-<div align="center">
-    <img src="image/haru urara.jpg" alt="" height="100px" width="100px">
-    <br>
-    <h1><p><b>Welcome to Cedric's Portfolio.</b></p></h1>
-    <br>
-    <button>
-    <a href="Description.html">DESCRIPTION</a>
-    </button>
 
-    <button>
-    <a href="skills.html">SKILLS</a>
-    </button>
+<body>
+    <section>
+        <div class="title">
+            
+                <span>T</span>
+                <span>E</span>
+                <span>A</span>
+                <span>M</span>
+                <span>B</span>
+                <span>A</span>
+            
+        </div>
+        <ul>
+            <li><button id="ced">Cedric</button></li>
+            <li><button id="karl">Karl</button></li>
+            <li><button id="khevin">Khevin</button></li>
+            <li><button id="rain">Rain</button></li>
+            <li><button id="eury">Eury</button></li>
+
+        </ul>
+        <img src="giphy.gif" width="400px " height="200px" id="spo">
+
+
+    </section>
+   
     </div>
+    <iframe src="" frameborder="0" id="sss"></iframe>
+    <script>
+        let iframe = document.getElementById("sss");
+        let karl= document.getElementById("karl");
+        let eury = document.getElementById("eury");
+        let ced = document.getElementById("ced");
+        let khevin = document.getElementById("khevin");
+        let rain = document.getElementById("rain");
+
+        khevin.onclick= ()=>{
+            let url= "";
+            url = "./khevin/index.html"
+            if (url) {
+                iframe.src= url;
+                iframe.style.display="flex";
+            }else{
+                iframe.src = "";
+            }
+        }
+        rain.onclick= ()=>{
+            let url= "";
+            url = "./rain/index.html"
+            if (url) {
+                iframe.src= url;
+                iframe.style.display="flex";
+            }else{
+                iframe.src = "";
+            }
+        }
+        karl.onclick= ()=>{
+            let url= "";
+            url = "./karl/index.html"
+            if (url) {
+                iframe.src= url;
+                iframe.style.display="flex";
+            }else{
+                iframe.src = "";
+            }
+        };
+        ced.onclick= ()=>{
+            let url= "";
+            url = "./ced/index.html"
+            if (url) {
+                iframe.src= url;
+                iframe.style.display="flex";
+            }else{
+                iframe.src = "";
+            }
+        };
+        eury.onclick= ()=>{
+            let url= "";
+            url = "./eury/index.html"
+            if (url) {
+                iframe.src= url;
+                iframe.style.display="flex";
+            }else{
+                iframe.src = "";
+            }
+        };
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                iframe.style.display = "none";
+
+   
+            }
+        });
+
+    </script>
 </body>
+
 </html>

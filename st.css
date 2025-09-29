@@ -1,0 +1,118 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+    padding:2px;
+    width: 400px;
+    height: 100px; 
+    border-radius: 20px;
+    background-color: black ;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    animation: bounce 2s forwards;
+}
+button:hover{   
+    background-color:pink;
+    color: white;
+    transform: translateY(-10px);
+}
+li{
+    list-style: none;
+    margin-top: 20px;
+    
+}
+h3{ 
+    align-self: center;
+    font-size: 60px;
+}
+section{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(45deg, white, hsl(195, 53%, 69%));
+    width: 97vw;
+    height: 120vh;
+    overflow: hidden;
+}
+#spon{
+    border: 2px solid black; 
+    float: right;
+    margin-top: -30rem;
+    margin-right: 5rem;
+}
+#khevin:hover{
+    background: blueviolet;
+    transform: rotateZ(90deg);
+}
+#ced:hover{
+    background: green;
+    color: #39FF14;
+    transform: skewX(20deg);
+}
+#karl:hover{
+    background-color: red;
+    opacity: 0;
+}
+#rain:hover{
+    background:rgb(3, 3, 255) ;
+    transform: rotateY(50deg);
+}
+.hes{
+    font-size: 20px;
+    display: flex;
+
+}
+.hes li{
+    background: red;
+}
+iframe{
+    position: fixed;
+    top: 5%;
+    left: 6%;
+    z-index: 999;
+    width: 80%;
+    height: 90%;
+    display: none;
+    border-radius: 10%;
+    padding: 10px;
+    
+}
+.title span:nth-child(even) {
+    color: pink;
+    font-size: 6rem;
+}
+.title span:nth-child(odd) {
+    color: rgba(14, 14, 228, 0.392);
+    font-size: 8rem;
+}
+.title span {
+    animation: bounce 2s ease infinite;
+    display: inline-block;
+}
+.title span:nth-child(2){
+animation-delay: 0.3s;
+}
+.title span:nth-child(3){
+    animation-delay: 0.6s;
+}
+.title span:nth-child(4){
+    animation-delay: 0.9s;
+}
+.title span:nth-child(5){
+    animation-delay: 1.2s;
+}.title span:nth-child(6){
+    animation-delay: 1.5s;
+}
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
