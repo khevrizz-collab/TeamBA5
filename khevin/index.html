@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="sy.css">
+    <style>
+      body{
+       background: rgb(255, 255, 255);}
+       progress::-webkit-progress-bar{
+         background: pink;
+       }
+    </style>
 </head>
 
 <body id="body">
@@ -14,16 +21,18 @@
           
             <ul>
                 <li><a href="#body">Home</a></li>
-                <li><a href="">Skill</a></li>
                 <li id="showSearch"><a href="#searchbar">project</a></li>
             </ul>
         </nav>
+        
         <img id="kheb" src="khe.jpg"  width="290px">
     </section>
     <label>Sample project</label>
     <input type="search" list="woa" class="searchbar" id="searchbar" placeholder="SampleProject">
     <input type="button" value="search" class="searchbar"  id="searchbtnn" onclick="search">
+    
     <div class="intro">
+      <h1>HELLOOO</h1>
         <p>My name is Khevin. Wellcome to my website!!! <br>
             I love to create beautiful and functional websites. <br>
             I am eager to learn new technologies. <br>
@@ -33,10 +42,35 @@
 
     </div>
     <!-- hire-->
+    
     <div class="intro">
 
-        <button id="hire">HIRE ME</button>
-
+        <button id="hire" style="background: black;
+    color: white;
+    font-family: Georgia, serif;
+    border-radius: 20px;
+    padding: 10px 20px;    
+    
+    font-size: 30px;
+    border: none;
+    text-transform: capitalize;
+    display: flex;
+    margin-left: 90px;
+    transition: all 0.3s;">hire me</button>
+     <div class="container">
+    <h2 id="skillbtn">Skills</h2>
+    <div class="light">
+      <div class="light-content">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>guitar</li>
+          <li>rubics</li>
+          <li>Draw</li>                    
+        </ul>         
+        </div>
+      </div>
+     </div>
     </div>    
     <datalist id="woa">
         <option value="Calcu"></option>
@@ -72,6 +106,18 @@
             }
 
         });
+        let btns=document.querySelector(".light");
+       let skil=document.getElementById("skillbtn");
+       skil.addEventListener("click", ()  => {
+         btns.style.display="flex";
+       });
+       
+       window.addEventListener("click", (e)=>{
+        if(e.target===btns){
+          btns.style.display="none";
+        }
+       }         
+         );
         
 
     </script>
